@@ -1,0 +1,38 @@
+.tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ring-track);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.filled {
+  background: var(--accent-work);
+  transform: scale(1.15);
+}
+
+.count {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.countNumber {
+  font-weight: 700;
+  color: var(--text-primary);
+}

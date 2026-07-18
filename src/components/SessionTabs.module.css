@@ -1,0 +1,48 @@
+.tabs {
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.35rem;
+  background: var(--surface-raised);
+  border-radius: 999px;
+}
+
+.tab {
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tab:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.tab.active.work {
+  background: var(--accent-work);
+  color: var(--accent-primary-contrast);
+}
+
+.tab.active.shortBreak {
+  background: var(--accent-short-break);
+  color: var(--accent-primary-contrast);
+}
+
+.tab.active.longBreak {
+  background: var(--accent-long-break);
+  color: var(--accent-primary-contrast);
+}
+
+@media (max-width: 380px) {
+  .tab {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.78rem;
+  }
+}

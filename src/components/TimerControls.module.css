@@ -1,0 +1,48 @@
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.primary,
+.secondary {
+  font: inherit;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary {
+  padding: 0.9rem 2.5rem;
+  font-size: 1.05rem;
+  background: var(--accent-primary);
+  color: var(--accent-primary-contrast);
+  box-shadow: 0 8px 20px -8px var(--accent-primary-shadow);
+}
+
+.secondary {
+  padding: 0.75rem 1.4rem;
+  font-size: 0.95rem;
+  background: var(--surface-raised);
+  color: var(--text-primary);
+}
+
+.primary:hover,
+.secondary:hover {
+  transform: translateY(-2px);
+}
+
+.primary:active,
+.secondary:active {
+  transform: translateY(0);
+}
+
+.primary:focus-visible,
+.secondary:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}

@@ -1,0 +1,77 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.4s ease;
+}
+
+.page.work {
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-work) 12%, var(--surface-page)), var(--surface-page) 60%);
+}
+
+.page.shortBreak {
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-short-break) 12%, var(--surface-page)), var(--surface-page) 60%);
+}
+
+.page.longBreak {
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--accent-long-break) 12%, var(--surface-page)), var(--surface-page) 60%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.settingsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--surface-raised);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.settingsButton:hover {
+  transform: rotate(30deg);
+}
+
+.settingsButton:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 1.25rem 3rem;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .main {
+    gap: 1.5rem;
+  }
+}
