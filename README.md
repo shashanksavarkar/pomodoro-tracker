@@ -2,6 +2,8 @@
 
 A Pomodoro Timer web app built with React and Vite.
 
+Built for the [roadmap.sh Pomodoro Timer project](https://roadmap.sh/projects/pomodoro-timer).
+
 ## Features
 
 - Start, pause/stop, and resume a work session timer
